@@ -1,20 +1,23 @@
 package com.neuedu.test.bean;
 
+import java.io.Serializable;
+
 /**
- * Created by 高星 on 2020/2/11.
+ * Created by 高星 on 2020/2/12.
  */
-public class MyBook{
+public class Mybook implements Serializable{
+    private  static final long serialversionUID=1L;
     private String name;
     private Double price;
     private String press;
-    private String autuor;
+    private String author;
     private String bookISBN;
 
-    public MyBook(String name, Double price, String press, String autuor, String bookISBN) {
+    public Mybook(String name, Double price, String press, String author, String bookISBN) {
         this.name = name;
         this.price = price;
         this.press = press;
-        this.autuor = autuor;
+        this.author = author;
         this.bookISBN = bookISBN;
     }
 
@@ -42,12 +45,12 @@ public class MyBook{
         this.press = press;
     }
 
-    public String getAutuor() {
-        return autuor;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setAutuor(String autuor) {
-        this.autuor = autuor;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     public String getBookISBN() {
@@ -56,5 +59,16 @@ public class MyBook{
 
     public void setBookISBN(String bookISBN) {
         this.bookISBN = bookISBN;
+    }
+
+    @Override
+    public String toString() {
+        return "Mybook{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", press='" + press + '\'' +
+                ", author='" + author + '\'' +
+                ", bookISBN='" + bookISBN + '\'' +
+                '}';
     }
 }
