@@ -6,69 +6,69 @@ import java.io.Serializable;
  * Created by 高星 on 2020/2/12.
  */
 public class Mybook implements Serializable{
-    private  static final long serialversionUID=1L;
-    private String name;
-    private Double price;
-    private String press;
-    private String author;
-    private String bookISBN;
+private  static final long serialversionUID=1L;
+private String name;
+private Double price;
+private String press;
+private String author;
+private String bookISBN;
 
-    public Mybook(String name, Double price, String press, String author, String bookISBN) {
+public Mybook(String name, Double price, String press, String author, String bookISBN) {
         this.name = name;
         this.price = price;
         this.press = press;
         this.author = author;
         this.bookISBN = bookISBN;
-    }
+        }
 
-    public String getName() {
+public String getName() {
         return name;
-    }
+        }
 
-    public void setName(String name) {
+public void setName(String name) {
         this.name = name;
-    }
+        }
 
-    public Double getPrice() {
+public Double getPrice() {
         return price;
-    }
+        }
 
-    public void setPrice(Double price) {
+public void setPrice(Double price) {
         this.price = price;
-    }
+        }
 
-    public String getPress() {
+public String getPress() {
         return press;
-    }
+        }
 
-    public void setPress(String press) {
+public void setPress(String press) {
         this.press = press;
-    }
+        }
 
-    public String getAuthor() {
+public String getAuthor() {
         return author;
-    }
+        }
 
-    public void setAuthor(String author) {
+public void setAuthor(String author) {
         this.author = author;
-    }
+        }
 
-    public String getBookISBN() {
+public String getBookISBN() {
         return bookISBN;
-    }
+        }
 
-    public void setBookISBN(String bookISBN) {
+public void setBookISBN(String bookISBN) {
         this.bookISBN = bookISBN;
-    }
+        }
 
-    @Override
-    public String toString() {
+@Override
+public String toString() {
         return "Mybook{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                ", press='" + press + '\'' +
-                ", author='" + author + '\'' +
-                ", bookISBN='" + bookISBN + '\'' +
-                '}';
-    }
-}
+        "name='" + name + '\'' +
+        ", price=" + price +
+        ", press='" + press + '\'' +
+        ", author='" + author + '\'' +
+        ", bookISBN='" + bookISBN + '\'' +
+        '}';
+        }
+        }
